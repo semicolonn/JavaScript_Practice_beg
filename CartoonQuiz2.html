@@ -1,0 +1,69 @@
+<HTML>
+
+<HEAD>
+
+<TITLE> Cartoon Quiz</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- HIDING FROM UNCOMPATIBLE BROWSERS
+
+	function scoreQuestion1(answer) {
+	
+		if(answer=="b") 
+		alert("Correct Answer");
+		else
+				alert("Incorrect Answer");
+		
+		}
+
+
+	function scoreQuestion2(answer) {
+	
+		if(answer=="c") 
+		alert("Correct Answer");
+		
+				else
+				alert("Incorrect Answer");
+
+		}
+
+
+// STOP HIDING FROM UNCOMPATIBLE BROWSERS
+
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1 style="COLOR: BLUE;"> Cartoon Quiz</H1>
+
+
+<P><B>Answer all of the questions on the quiz, then select the score button to grade the quiz.</B></P>
+
+<FORM>
+<P><B>1. What is the name of Walt Disney a famous mouse?</B></P>
+<P><INPUT TYPE= RADIO NAME=question1 VALUE="a" onclick="scoreQuestion1(this.value)">Mighty Mouse</BR>
+
+<INPUT TYPE= RADIO NAME=question1 VALUE="b" onclick="scoreQuestion1(this.value)">Mickey Mouse<BR>
+
+<INPUT TYPE= RADIO NAME=question1 VALUE="c" onclick="scoreQuestion1(this.value)">Marty Mouse</BR>
+
+<INPUT TYPE= RADIO NAME=question1 VALUE="d" onclick="scoreQuestion1(this.value)">Melvin Mouse</BR></P>
+
+<HR>
+<P><B>2. The charcter Buzz Lightyear was featured in which animated film?</B></P>
+<P>
+<INPUT TYPE= RADIO NAME=question2 VALUE="a" onclick="scoreQuestion2(this.value)">Mighty Fantasia</BR>
+
+<INPUT TYPE= RADIO NAME=question2 VALUE="b" onclick="scoreQuestion2(this.value)">Hercules<BR>
+
+<INPUT TYPE= RADIO NAME=question2 VALUE="c" onclick="scoreQuestion2(this.value)">Toy Story</BR>
+
+<INPUT TYPE= RADIO NAME=question2 VALUE="d" onclick="scoreQuestion2(this.value)">Mulan</BR></P>
+
+<HR>
+
+</FORM>
+
+</BODY>
+
+</HTML>

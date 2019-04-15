@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<TITLE>Speed Limit</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- HIDE FROM UNCOMPATIBLE BROWSERS
+
+
+	function SpeedLimit(speed) {
+	
+	while(speed<=65){
+	var NewSpeed= prompt ("Your Speed is"+ speed +". Please enter a new speed", "");
+	
+	if (NewSpeed>65){
+	alert("Your are speeding!");
+	break;
+	}
+	
+	if (NewSpeed<=0) {
+	alert("Your are stopped!");
+	break;
+
+	}
+	else {
+	speed=NewSpeed;
+	}
+		
+	
+	}
+	}
+	//STOP HIDING FROM UNCOMPATIBLE BROWSERS
+
+</SCRIPT>
+</HEAD>
+
+
+<BODY onload="SpeedLimit(55);">
+
+<H1>Select Reload or Refresh to restart the SpeedLimit program.</H1>
+
+</BODY>
+</HTML>

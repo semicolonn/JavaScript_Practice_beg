@@ -1,0 +1,57 @@
+<html>
+<h1 style="border: double yellow; background: darkred; color: white;">Company Objects program</h1>
+
+<body>
+<head>
+<title>Company Objects Program</title>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- HIDE FROM INCOMPATIBLE BROWSERS
+
+	function Company(){
+		this.company_name="Web Adventure, Inc.";
+		this.company_products="Internet Services";
+	}
+	
+	function Sales(){
+		this.territory="North America";
+		this.sales_reps="50";
+	}
+
+	Sales.prototype=new Company();
+	
+	function Production(){
+		this.facilities=" New York, Chicago, and Los Angles";
+		this.personnel="100";
+	}
+	Production.prototype= new Company();
+	
+	// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+	</SCRIPT>
+	</HEAD>
+	</body>
+	<BODY>
+	<PRE>
+	<SCRIPT LANGUAGE="JAVASCRIPT">
+	<!-- HIDE FROM INCOMPATIBLE BROWSERS
+	
+	sales_object = new Sales();
+		document.writeln(sales_object.company_name);
+		document.writeln("Producer of" + sales_object.company_products);
+		
+		document.write(sales_object.sales_reps+ "sales_reps");
+		document.writeln("in" +sales_object.territory);
+		
+		production_object= new Production();
+		
+			document.write(production_object.company_name);
+			document.writeln("has" +production_object.personnel+ "production personnel");
+			document.write("with facilities in"+ production_object.facilities);
+			
+	// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+
+</SCRIPT>
+</PRE>
+</BODY>
+</HTML>	
+		

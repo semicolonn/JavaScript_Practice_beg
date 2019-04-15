@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<TITLE>Calculator</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- HIDE FROM INCOMPATIBLE BROWSERS
+
+	var inputString="";
+	function updateString(value) {
+	
+		inputString += value;
+		document.Calculator.Input.value = inputString;
+		}
+		
+// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+
+</SCRIPT>
+</HEAD>
+
+<BODY>
+
+
+	<DIV ALIGN="center">
+	<FORM NAME="Calculator">
+	<INPUT TYPE="text" NAME="Input" size="22">
+	<BR>
+	<INPUT TYPE="button" NAME="plus" VALUE=" + " onclick="updateString(' + ')">
+	<INPUT TYPE="button" NAME="minus" VALUE=" - " onclick="updateString(' - ')">
+	<INPUT TYPE="button" NAME="times" VALUE=" x " onclick="updateString(' * ')">
+	<INPUT TYPE="button" NAME="div" VALUE=" / " onclick="updateString(' / ')">
+	<INPUT TYPE="button" NAME="mod" VALUE=" MOD " onclick="updateString(' % ')">
+	<BR>
+	<BR>
+	<INPUT TYPE="button" NAME="zero" VALUE=" 0 " onclick="updateString('0')">
+	<INPUT TYPE="button" NAME="one" VALUE=" 1 " onclick="updateString('1')">
+	<INPUT TYPE="button" NAME="two" VALUE=" 2 " onclick="updateString('2')">
+	<INPUT TYPE="button" NAME="three" VALUE=" 3 " onclick="updateString('3')">
+	<INPUT TYPE="button" NAME="four" VALUE=" 4 " onclick="updateString('4')">
+	<BR>
+	<INPUT TYPE="button" NAME="five" VALUE=" 5 " onclick="updateString('5')">
+	<INPUT TYPE="button" NAME="six" VALUE=" 6 "onclick="updateString('6')">
+	<INPUT TYPE="button" NAME="seven" VALUE=" 7 "onclick="updateString('7')">
+	<INPUT TYPE="button" NAME="eight" VALUE=" 8 "onclick="updateString('8')">
+	<INPUT TYPE="button" NAME="nine" VALUE=" 9 "onclick="updateString('9')">
+	<BR>
+	<INPUT TYPE="button" NAME="point" VALUE=" . " onclick="updateString('.')">
+	<INPUT TYPE="button" NAME="clear" VALUE=" Clear " onclick="Input.value=''; inputString=''">
+	<INPUT TYPE="button" NAME="Calc" VALUE=" = " onclick="Input.value=eval(inputString); inputString=''">
+	</FORM>
+	</DIV>
+	</BODY>
+
+</HTML>

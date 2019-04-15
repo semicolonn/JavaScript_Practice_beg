@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Combobox with JavaScript</title>
+</head>
+<body>
+
+<form>
+	Select your favorite color:
+	<select id="color" onchange="setcolor()">
+		<option>Red</option>
+		<option>Green</option>
+		<option>Yellow</option>
+		<option>Brown</option>
+	</select>
+</form>
+<p id="result"></p>
+
+<script type="text/javascript">
+
+	function setcolor(){
+		var get_color=document.getElementById('color').value;
+
+		document.getElementById("result").innerHTML="Your favorite color is:"+get_color;
+	}
+</script>
+
+</body>
+</html>

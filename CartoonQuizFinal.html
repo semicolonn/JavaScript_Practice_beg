@@ -1,0 +1,75 @@
+<HTML>
+
+<HEAD>
+
+<TITLE> Cartoon Quiz</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- HIDING FROM UNCOMPATIBLE BROWSERS
+
+
+
+
+	var answers= new Array(5);
+	var correctAnswers= new Array(5);
+		correctAnswers[0]="b";
+		correctAnswers[1]="c";
+		correctAnswers[2]="d";
+		correctAnswers[3]="c";
+		correctAnswers[4]="a";
+
+	function recordAnswers(question, answer){
+		answers[question-1]= answer;
+		}
+	
+	function scoreQuiz(){
+		var totalCorrect=0;
+		
+	for( count=0; count < correctAnswers.lenght; ++count){
+		if (answers[count]== correctAnswers[count])
+		++totalCorrect;
+		}
+		alert("You scored" + totalCorrect+ "out of 5 answers correctly!");
+			}
+			
+
+// STOP HIDING FROM UNCOMPATIBLE BROWSERS
+
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1 style="COLOR: BLUE;"> Cartoon Quiz</H1>
+
+
+<P><B>Answer all of the questions on the quiz, then select the score button to grade the quiz.</B></P>
+
+<FORM>
+<P><B>1. What is the name of Walt Disney a famous mouse?</B></P>
+<P><INPUT TYPE= RADIO NAME=question1  onclick="recordAnswers(1,this.value)">Mighty Mouse</BR>
+
+<INPUT TYPE= RADIO NAME=question1  onclick="recordAnswers(2,this.value)">Mickey Mouse<BR>
+
+<INPUT TYPE= RADIO NAME=question1 onclick="recordAnswers(3,this.value)">Marty Mouse</BR>
+
+<INPUT TYPE= RADIO NAME=question1  onclick="recordAnswers(4,this.value)">Melvin Mouse</BR></P>
+
+<HR>
+<P><B>2. The charcter Buzz Lightyear was featured in which animated film?</B></P>
+<P>
+<INPUT TYPE= RADIO NAME=question2  onclick="recordAnswers(5,this.value)">Mighty Fantasia</BR>
+
+<INPUT TYPE= RADIO NAME=question2  onclick="recordAnswers(6,this.value)">Hercules<BR>
+
+<INPUT TYPE= RADIO NAME=question2  onclick="recordAnswers(7,this.value)">Toy Story</BR>
+
+<INPUT TYPE= RADIO NAME=question2  onclick="recordAnswers(8,this.value)">Mulan</br>
+<input type=button  VALUE="score" Onclick="scoreQuiz();"></P>
+<HR>
+
+</FORM>
+
+</BODY>
+
+</HTML>
+

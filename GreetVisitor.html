@@ -1,0 +1,36 @@
+<html>
+<head>
+
+<title> JavaScript Events</title>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- HIDE FROM INCOMPATIBLE BROWSERS
+
+	var visitor_name= " ";
+	
+	function greet_visitor(){
+		visitor_name= prompt("Please enter your name", "Enter your name here");
+		alert("Welcome,"+ visitor_name+"!");
+			}
+	
+	function farewell_visitor(){
+		alert("Thanks," +visitor_name+", for visiting this web page!");
+		
+		//STOP HIDING FROM INCOMPATIBLE BROWSERS
+		</SCRIPT>
+		</HEAD>
+		
+		<BODY onLoad="greet_visitor();" onLoad="farewell_visitor();">
+		
+		<FORM>
+		<INPUT TYPE="text" NAME="text_field" SIZE="25" onChange="alert('The value of the text_field has changed.');">
+		
+		<BR>
+		<INPUT TYPE="button" VALUE="Display Text Field Contents" onClick="alert(text_field.value);">
+		
+		</FORM>
+		</BODY>
+			
+
+</html>
